@@ -21,12 +21,10 @@ if __name__ == '__main__':
         try:
             now = rospy.Time.now()
             past = now - rospy.Duration(5.0)
-            listener.waitForTransformFull("/turtle2", now,
-                                          leader_tf, past,
-                                          "/map", rospy.Duration(1.0))
-            (trans, rot) = listener.lookupTransformFull("/turtle2", now,
-                                                        leader_tf, past,
-                                                        "/map")
+            listener.waitForTransformFull(
+                '/turtle2', now, leader_tf, past, '/map', rospy.Duration(1.0))
+            (trans, rot) = listener.lookupTransformFull(
+                '/turtle2', now, leader_tf, past, '/map')
         except (tf.Exception, tf.LookupException, tf.ConnectivityException):
             continue
 
