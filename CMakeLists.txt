@@ -126,6 +126,7 @@ include_directories(
 ## in contrast to setup.py, you can choose the destination
 install(PROGRAMS
   nodes/turtle_tf_broadcaster.py
+  nodes/turtle_tf_listener.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
