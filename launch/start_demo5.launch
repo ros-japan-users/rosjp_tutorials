@@ -6,7 +6,7 @@
       <param name="turtle" type="string" value="turtle2"/>
     </node>
 
-    <node name="turtle_tf_listener3" pkg="learning_tf" type="turtle_tf_listener3.py"
+    <node name="turtle_tf_listener" pkg="learning_tf" type="turtle_tf_listener3.py"
           respawn="false" output="screen">
       <param name="leader_tf" type="string" value="/carrot1"/>
     </node>

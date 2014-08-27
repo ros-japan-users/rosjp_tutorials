@@ -1,7 +1,7 @@
 <launch>
-    <node pkg="turtlesim" type="turtlesim_node" name="sim"/>
+    <node name="sim" pkg="turtlesim" type="turtlesim_node"/>
 
-    <node pkg="turtlesim" type="turtle_teleop_key" name="teleop" output="screen"/>
+    <node name="teleop" output="screen" pkg="turtlesim" type="turtle_teleop_key"/>
 
     <node name="turtle1_tf_broadcaster" pkg="learning_tf" type="turtle_tf_broadcaster.py"
           respawn="false" output="screen">
