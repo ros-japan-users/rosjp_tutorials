@@ -11,7 +11,7 @@ def handle_turtle_pose(msg, turtle_name):
                      tf.transformations.quaternion_from_euler(0, 0, msg.theta),
                      rospy.Time.now(),
                      turtle_name,
-                     'world')
+                     '/map')
 
 if __name__ == '__main__':
     rospy.init_node('turtle_tf_broadcaster')
