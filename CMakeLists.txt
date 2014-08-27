@@ -127,6 +127,7 @@ include_directories(
 install(PROGRAMS
   nodes/turtle_tf_broadcaster.py
   nodes/turtle_tf_listener.py
+  nodes/fixed_tf_broadcaster.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
@@ -146,7 +147,9 @@ install(PROGRAMS
 
 ## Mark other files for installation (e.g. launch and bag files, etc.)
 install(FILES
-  launch/start_demo.launch
+  launch/start_demo1.launch
+  launch/start_demo2.launch
+  launch/start_demo3.launch
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 
