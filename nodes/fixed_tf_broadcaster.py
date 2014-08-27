@@ -12,6 +12,6 @@ if __name__ == '__main__':
         br.sendTransform((0.0, 2.0, 0.0),
                          (0.0, 0.0, 0.0, 1.0),
                          rospy.Time.now(),
-                         "carrot1",
-                         "turtle1")
+                         'carrot1',
+                         'turtle1')
         rate.sleep()

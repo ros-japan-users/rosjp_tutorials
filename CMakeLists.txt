@@ -128,6 +128,7 @@ install(PROGRAMS
   nodes/turtle_tf_broadcaster.py
   nodes/turtle_tf_listener.py
   nodes/fixed_tf_broadcaster.py
+  nodes/turtle_tf_listener2.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
@@ -150,6 +151,7 @@ install(FILES
   launch/start_demo1.launch
   launch/start_demo2.launch
   launch/start_demo3.launch
+  launch/start_demo4.launch
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 
