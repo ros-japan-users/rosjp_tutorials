@@ -9,6 +9,7 @@ import turtlesim.srv
 
 if __name__ == '__main__':
     rospy.init_node('turtle_tf_listener')
+    leader_tf = rospy.get_param('~leader_tf')
     listener = tf.TransformListener()
     rospy.wait_for_service('spawn')
     spawner = rospy.ServiceProxy('spawn', turtlesim.srv.Spawn)
@@ -17,7 +18,7 @@ if __name__ == '__main__':
     rate = rospy.Rate(10.0)
     while not rospy.is_shutdown():
         try:
-            (trans, rot) = listener.lookupTransform('/turtle2', '/turtle1', rospy.Time(0))
+            (trans, rot) = listener.lookupTransform('/turtle2', leader_tf, rospy.Time(0))
         except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException):
             continue
 
