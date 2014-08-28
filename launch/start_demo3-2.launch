@@ -1,0 +1,16 @@
+<launch>
+    <include file="$(find learning_tf)/launch/start_demo1.launch"/>
+
+    <node name="turtle2_tf_broadcaster" pkg="learning_tf" type="turtle_tf_broadcaster.py"
+          respawn="false" output="screen">
+      <param name="turtle" type="string" value="turtle2"/>
+    </node>
+
+    <node name="turtle_tf_listener" pkg="learning_tf" type="turtle_tf_listener.py"
+          respawn="false" output="screen">
+      <param name="leader_frame" type="string" value="/carrot1"/>
+    </node>
+
+    <node name="dynamic_tf_broadcaster" pkg="learning_tf" type="dynamic_tf_broadcaster.py"
+          respawn="false" output="screen"/>
+  </launch>
