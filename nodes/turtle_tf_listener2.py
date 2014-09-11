@@ -20,7 +20,7 @@ if __name__ == '__main__':
     while not rospy.is_shutdown():
         try:
             now = rospy.Time.now()
-            listener.waitForTransform('/turtle2', '/carrot1', now, rospy.Duration(4.0))
+            listener.waitForTransform('/turtle2', leader_frame, now, rospy.Duration(4.0))
             (trans, rot) = listener.lookupTransform('/turtle2', leader_frame, now)
         except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException):
             continue
