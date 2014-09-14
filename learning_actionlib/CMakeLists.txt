@@ -30,3 +30,15 @@ add_dependencies(
   fibonacci_server
   ${learning_actionlib_EXPORTED_TARGETS}
 )
+
+add_executable(fibonacci_client src/fibonacci_client.cpp)
+
+target_link_libraries(
+  fibonacci_client
+  ${catkin_LIBRARIES}
+)
+
+add_dependencies(
+  fibonacci_client
+  ${learning_actionlib_EXPORTED_TARGETS}
+)
