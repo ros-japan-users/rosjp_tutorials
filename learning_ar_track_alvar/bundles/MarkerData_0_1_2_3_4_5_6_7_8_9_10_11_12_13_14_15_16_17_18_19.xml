@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<multimarker markers="20">
+    <marker index="0" status="1">
+        <corner x="0" y="0" z="0" />
+        <corner x="4.5" y="-4.5" z="0" />
+        <corner x="4.5" y="4.5" z="0" />
+        <corner x="-4.5" y="4.5" z="0" />
+    </marker>
+    <marker index="1" status="1">
+        <corner x="18" y="0" z="0" />
+        <corner x="22.5" y="-4.5" z="0" />
+        <corner x="22.5" y="4.5" z="0" />
+        <corner x="13.5" y="4.5" z="0" />
+    </marker>
+    <marker index="2" status="1">
+        <corner x="18" y="-18" z="0" />
+        <corner x="22.5" y="-22.5" z="0" />
+        <corner x="22.5" y="-13.5" z="0" />
+        <corner x="13.5" y="-13.5" z="0" />
+    </marker>
+    <marker index="3" status="1">
+        <corner x="0" y="-18" z="0" />
+        <corner x="4.5" y="-22.5" z="0" />
+        <corner x="4.5" y="-13.5" z="0" />
+        <corner x="-4.5" y="-13.5" z="0" />
+    </marker>
+    <marker index="4" status="1">
+        <corner x="36" y="0" z="0" />
+        <corner x="40.5" y="-4.5" z="0" />
+        <corner x="40.5" y="4.5" z="0" />
+        <corner x="31.5" y="4.5" z="0" />
+    </marker>
+    <marker index="5" status="1">
+        <corner x="36" y="-18" z="0" />
+        <corner x="40.5" y="-22.5" z="0" />
+        <corner x="40.5" y="-13.5" z="0" />
+        <corner x="31.5" y="-13.5" z="0" />
+    </marker>
+    <marker index="6" status="1">
+        <corner x="36" y="-36" z="0" />
+        <corner x="40.5" y="-40.5" z="0" />
+        <corner x="40.5" y="-31.5" z="0" />
+        <corner x="31.5" y="-31.5" z="0" />
+    </marker>
+    <marker index="7" status="1">
+        <corner x="18" y="-36" z="0" />
+        <corner x="22.5" y="-40.5" z="0" />
+        <corner x="22.5" y="-31.5" z="0" />
+        <corner x="13.5" y="-31.5" z="0" />
+    </marker>
+    <marker index="8" status="1">
+        <corner x="0" y="-36" z="0" />
+        <corner x="4.5" y="-40.5" z="0" />
+        <corner x="4.5" y="-31.5" z="0" />
+        <corner x="-4.5" y="-31.5" z="0" />
+    </marker>
+    <marker index="9" status="1">
+        <corner x="54" y="0" z="0" />
+        <corner x="58.5" y="-4.5" z="0" />
+        <corner x="58.5" y="4.5" z="0" />
+        <corner x="49.5" y="4.5" z="0" />
+    </marker>
+    <marker index="10" status="1">
+        <corner x="54" y="-18" z="0" />
+        <corner x="58.5" y="-22.5" z="0" />
+        <corner x="58.5" y="-13.5" z="0" />
+        <corner x="49.5" y="-13.5" z="0" />
+    </marker>
+    <marker index="11" status="1">
+        <corner x="54" y="-36" z="0" />
+        <corner x="58.5" y="-40.5" z="0" />
+        <corner x="58.5" y="-31.5" z="0" />
+        <corner x="49.5" y="-31.5" z="0" />
+    </marker>
+    <marker index="12" status="1">
+        <corner x="54" y="-54" z="0" />
+        <corner x="58.5" y="-58.5" z="0" />
+        <corner x="58.5" y="-49.5" z="0" />
+        <corner x="49.5" y="-49.5" z="0" />
+    </marker>
+    <marker index="13" status="1">
+        <corner x="36" y="-54" z="0" />
+        <corner x="40.5" y="-58.5" z="0" />
+        <corner x="40.5" y="-49.5" z="0" />
+        <corner x="31.5" y="-49.5" z="0" />
+    </marker>
+    <marker index="14" status="1">
+        <corner x="18" y="-54" z="0" />
+        <corner x="22.5" y="-58.5" z="0" />
+        <corner x="22.5" y="-49.5" z="0" />
+        <corner x="13.5" y="-49.5" z="0" />
+    </marker>
+    <marker index="15" status="1">
+        <corner x="0" y="-54" z="0" />
+        <corner x="4.5" y="-58.5" z="0" />
+        <corner x="4.5" y="-49.5" z="0" />
+        <corner x="-4.5" y="-49.5" z="0" />
+    </marker>
+    <marker index="16" status="1">
+        <corner x="72" y="0" z="0" />
+        <corner x="76.5" y="-4.5" z="0" />
+        <corner x="76.5" y="4.5" z="0" />
+        <corner x="67.5" y="4.5" z="0" />
+    </marker>
+    <marker index="17" status="1">
+        <corner x="72" y="-18" z="0" />
+        <corner x="76.5" y="-22.5" z="0" />
+        <corner x="76.5" y="-13.5" z="0" />
+        <corner x="67.5" y="-13.5" z="0" />
+    </marker>
+    <marker index="18" status="1">
+        <corner x="72" y="-36" z="0" />
+        <corner x="76.5" y="-40.5" z="0" />
+        <corner x="76.5" y="-31.5" z="0" />
+        <corner x="67.5" y="-31.5" z="0" />
+    </marker>
+    <marker index="19" status="1">
+        <corner x="72" y="-54" z="0" />
+        <corner x="76.5" y="-58.5" z="0" />
+        <corner x="76.5" y="-49.5" z="0" />
+        <corner x="67.5" y="-49.5" z="0" />
+    </marker>
+</multimarker>
