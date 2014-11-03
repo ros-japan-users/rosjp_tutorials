@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="name" default="HiroNX(Robot)0" />
+  <arg name="host" default="localhost" />
+  <arg name="model_file" default="$(find nextage_description)/models/main.wrl" />
+
+  <param name="robot_description" textfile="$(find learning_urdf)/urdf/NextageOpen_LeftArmOnly.urdf"/>
+
+  <node name="joint_state_publisher" pkg="learning_urdf" type="nextage_state_publisher.py" >
+    <param name="name" type="string" value="$(arg name)" />
+    <param name="host" type="string" value="$(arg host)" />
+    <param name="model_file" type="string" value="$(arg model_file)" />
+  </node>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find learning_urdf)/launch/joint_simulation.rviz" />
+</launch>
