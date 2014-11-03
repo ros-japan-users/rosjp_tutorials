@@ -15,8 +15,6 @@
 
   <link name="WAIST">
   </link>
-  <link name="CHEST_JOINT0_Link">
-  </link>
   <link name="LARM_JOINT0_Link">
   </link>
   <link name="LARM_JOINT1_Link">
@@ -30,16 +28,8 @@
   <link name="LARM_JOINT5_Link">
   </link>
 
-  <joint name="CHEST_JOINT0" type="revolute">
-    <parent link="WAIST"/>
-    <child  link="CHEST_JOINT0_Link"/>
-    <origin xyz="0 0 0" rpy="0 -0 0 "/>
-    <axis   xyz="0 0 1"/>
-    <limit lower="-2.84489" upper="2.84489" effort="100" velocity="0.5" />
-    <dynamics damping="0.2" friction="0" />
-  </joint>
   <joint name="LARM_JOINT0" type="revolute">
-    <parent link="CHEST_JOINT0_Link"/>
+    <parent link="WAIST"/>
     <child  link="LARM_JOINT0_Link"/>
     <origin xyz="0 0.145 0.370296" rpy="-0.261799 0 0 "/>
     <axis   xyz="0 0 1"/>
