@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<robot name="NextageOpen"
+       xmlns:xi="http://www.w3.org/2001/XInclude"
+       xmlns:gazebo="http://playerstage.sourceforge.net/gazebo/xmlschema/#gz"
+       xmlns:model="http://playerstage.sourceforge.net/gazebo/xmlschema/#model"
+       xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+       xmlns:body="http://playerstage.sourceforge.net/gazebo/xmlschema/#body"
+       xmlns:geom="http://playerstage.sourceforge.net/gazebo/xmlschema/#geom"
+       xmlns:joint="http://playerstage.sourceforge.net/gazebo/xmlschema/#joint"
+       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+       xmlns:rendering="http://playerstage.sourceforge.net/gazebo/xmlschema/#rendering"
+       xmlns:renderable="http://playerstage.sourceforge.net/gazebo/xmlschema/#renderable"
+       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+       xmlns:physics="http://playerstage.sourceforge.net/gazebo/xmlschema/#physics">
+
+  <link name="WAIST">
+  </link>
+  <link name="CHEST_JOINT0_Link">
+  </link>
+  <link name="LARM_JOINT0_Link">
+  </link>
+  <link name="LARM_JOINT1_Link">
+  </link>
+  <link name="LARM_JOINT2_Link">
+  </link>
+  <link name="LARM_JOINT3_Link">
+  </link>
+  <link name="LARM_JOINT4_Link">
+  </link>
+  <link name="LARM_JOINT5_Link">
+  </link>
+
+  <joint name="CHEST_JOINT0" type="revolute">
+    <parent link="WAIST"/>
+    <child  link="CHEST_JOINT0_Link"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-2.84489" upper="2.84489" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="LARM_JOINT0" type="revolute">
+    <parent link="CHEST_JOINT0_Link"/>
+    <child  link="LARM_JOINT0_Link"/>
+    <origin xyz="0 0.145 0.370296" rpy="-0.261799 0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-1.53589" upper="1.53589" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="LARM_JOINT1" type="revolute">
+    <parent link="LARM_JOINT0_Link"/>
+    <child  link="LARM_JOINT1_Link"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-2.44346" upper="1.0472" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="LARM_JOINT2" type="revolute">
+    <parent link="LARM_JOINT1_Link"/>
+    <child  link="LARM_JOINT2_Link"/>
+    <origin xyz="0 0.095 -0.25" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-2.75762" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="LARM_JOINT3" type="revolute">
+    <parent link="LARM_JOINT2_Link"/>
+    <child  link="LARM_JOINT3_Link"/>
+    <origin xyz="-0.03 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-1.8326" upper="2.87979" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="LARM_JOINT4" type="revolute">
+    <parent link="LARM_JOINT3_Link"/>
+    <child  link="LARM_JOINT4_Link"/>
+    <origin xyz="0 0 -0.235" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-1.74533" upper="1.74533" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="LARM_JOINT5" type="revolute">
+    <parent link="LARM_JOINT4_Link"/>
+    <child  link="LARM_JOINT5_Link"/>
+    <origin xyz="-0.047 0 -0.09" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-2.84489" upper="2.84489" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+</robot>
