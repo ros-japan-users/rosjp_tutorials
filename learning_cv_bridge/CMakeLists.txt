@@ -126,7 +126,7 @@ include_directories(
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
 install(PROGRAMS
-  nodes/cv_bridge.py
+  nodes/cv_bridge_broadcaster.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
@@ -146,7 +146,7 @@ install(PROGRAMS
 
 ## Mark other files for installation (e.g. launch and bag files, etc.)
 install(FILES
-  launch/cv_bridge.py
+  launch/start_demo.launch
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 
